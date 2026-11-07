@@ -1,0 +1,23 @@
+{
+  "name": "b1_playwright_automation_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tests-all-headless": "npx playwright test --headless",
+    "tests-all-headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "test_smoke": "npx playwright test --grep @keyboard",
+    "test_regres": "npx playwright test --grep @regres",
+    "test_smoke_or_regres": "npx playwright test -g \"@smoke|@regres\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "allure-playwright": "^3.13.0",
+    "dotenv": "^18.0.3"
+  }
+}
